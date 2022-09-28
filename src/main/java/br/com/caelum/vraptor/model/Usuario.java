@@ -9,15 +9,16 @@ import org.hibernate.validator.constraints.NotEmpty;
 @Entity
 public class Usuario extends Model {
 	
-	@NotEmpty
-	@Size(min = 4, max = 30)
+	@NotEmpty(message="{usuario.nome.embranco}")
+	@Size(min = 4, max = 30, message="{usuario.nome.size}")
 	private String nome;
 	
-	@NotEmpty
-	@Email
+	@NotEmpty(message="{usuario.email.embranco}")
+	@Email(message="{usuario.email}")
 	private String email;
 	
-	@NotEmpty
+	@NotEmpty(message="{usuario.senha.embranco}")
+	@Size(min = 6, max = 16, message="{usuario.senha.size}")
 	private String senha;
 	
 	public String getNome() {
