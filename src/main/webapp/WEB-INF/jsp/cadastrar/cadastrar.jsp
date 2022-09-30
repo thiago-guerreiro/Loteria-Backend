@@ -63,7 +63,7 @@
                     <input name="usuario.senha" type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Senha">
                   </div>
                   <div class="col-sm-6">
-                    <input type="password" class="form-control form-control-user" id="exampleRepeatPassword" placeholder="Confirmar senha">
+                    <input name="confirmaSenha" type="password" class="form-control form-control-user" id="exampleRepeatPassword" placeholder="Confirmar senha">
                   </div>
                 </div>
                 <button type="submit" class="btn btn-primary btn-user btn-block">
