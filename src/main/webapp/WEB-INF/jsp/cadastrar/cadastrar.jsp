@@ -48,22 +48,19 @@
               
               <form method="post" class="user" action="<c:url value="cadastrar/salvausuario"/>">
                 <div class="form-group row">
-                  <div class="col-sm-6 mb-3 mb-sm-0">
-                    <input name="usuario.nome" type="text" class="form-control form-control-user" id="exampleFirstName" placeholder="Nome">
-                  </div>
-                  <div class="col-sm-6">
-                    <input name="usuario.sobrenome" type="text" class="form-control form-control-user" id="exampleLastName" placeholder="Sobrenome">
+                  <div class="col-sm-12 mb-3 mb-sm-0">
+                    <input name="usuario.nome" value="${usuario.nome}" type="text" class="form-control form-control-user" id="exampleFirstName" placeholder="Nome">
                   </div>
                 </div>
                 <div class="form-group">
-                  <input name="usuario.email" type="email" class="form-control form-control-user" id="exampleInputEmail" placeholder="Email">
+                  <input name="usuario.email" value="${usuario.email}" type="email" class="form-control form-control-user" id="exampleInputEmail" placeholder="Email">
                 </div>
                 <div class="form-group row">
                   <div class="col-sm-6 mb-3 mb-sm-0">
-                    <input name="usuario.senha" type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Senha">
+                    <input name="usuario.senha" value="${usuario.senha}" type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Senha">
                   </div>
                   <div class="col-sm-6">
-                    <input name="confirmaSenha" type="password" class="form-control form-control-user" id="exampleRepeatPassword" placeholder="Confirmar senha">
+                    <input name="confirmaSenha" value="${confirmaSenha}" type="password" class="form-control form-control-user" id="exampleRepeatPassword" placeholder="Confirmar senha">
                   </div>
                 </div>
                 <button type="submit" class="btn btn-primary btn-user btn-block">
